@@ -14,6 +14,7 @@ export default function Banner() {
     if (banner.current && !banner.current.firstChild) {
       const conf = document.createElement("script");
       const script = document.createElement("script");
+      script.async = true;
       script.type = "text/javascript";
       script.src = `//www.topcreativeformat.com/4a9484e745a30d15214cb828f8645a43/invoke.js`;
       conf.innerHTML = `atOptions = ${JSON.stringify(atOptions)}`;
